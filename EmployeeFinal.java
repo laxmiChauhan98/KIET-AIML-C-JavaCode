@@ -21,7 +21,7 @@ public final class EmployeeFinal{
     public static void main(String[] args) {
         EmployeeFinal e1 = new EmployeeFinal();
         e1.Emp_name="Laxmi";
-        e1.companyName="KGIT";
+      //  e1.companyName="KGIT";
         e1.displayInfo();
 
        // e1.companyName="KIET";
@@ -30,7 +30,7 @@ public final class EmployeeFinal{
     }
 }
 
- class Test extends EmployeeFinal{
+// class Test extends EmployeeFinal{
 
 
 
@@ -39,6 +39,6 @@ public final class EmployeeFinal{
     // }
     
 
-}
+//}
 
  

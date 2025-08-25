@@ -1,44 +1,43 @@
-public final class EmployeeFinal{
-    final String companyName = "KIET Groups";  // final member variable
-    String Emp_name;
+ public class EmployeeFinal{
+    
+    final String org_name;
+    EmployeeFinal(){
+        org_name="KIET";
+    }
 
- 
-    // Constructor to initialize empId
-    // EmployeeFinal(int empId, String name) {
-    //     System.out.println(empId);
-    //     this.empId = empId;
-    //     this.name = name;
-    // }
+     void methodDemo(){
+        System.out.println("This is a final method!");
+    }
 
-    final void displayInfo() {
-        System.out.println("Company: " + companyName);
-        //System.out.println("Employee ID: " + empId);
-        System.out.println("Name: " + Emp_name);
+    void CollegeName(){
+        System.out.println("Organisation is: "+org_name);
     }
 
 
-
-    public static void main(String[] args) {
-        EmployeeFinal e1 = new EmployeeFinal();
-        e1.Emp_name="Laxmi";
-      //  e1.companyName="KGIT";
-        e1.displayInfo();
-
-       // e1.companyName="KIET";
-
-       //  e1.empId = 202; // ERROR: Cannot assign a value to final variable empId
-    }
+    
 }
 
-// class Test extends EmployeeFinal{
+class FinalDemo extends EmployeeFinal{
+
+    void methodDemo(){
+        super.methodDemo();
+        System.out.println("Overrided Demo method");
+    }
+   public static void main(String[] args) {
+        // EmployeeFinal ef=new EmployeeFinal();
+        
+        // ef.CollegeName();
+
+        // EmployeeFinal ef2=new EmployeeFinal();
+       
+        // ef2.CollegeName();
+
+        FinalDemo fd=new FinalDemo();
+        fd.CollegeName();
+        fd.methodDemo();
 
 
+    }
 
-    // public void displayInfo(){  //this can not be override
-    //     System.out.println("Overriding Final Method");
-    // }
-    
-
-//}
-
+}
  

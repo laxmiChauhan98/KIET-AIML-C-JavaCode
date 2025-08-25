@@ -55,7 +55,7 @@ public class InheritanceHierarchial {
     s1.details();
     s1.staffDetails();
 
-     System.out.println("--------------------------------------");
+    System.out.println("--------------------------------------");
 
     Staff s2=new Staff();
     s2.Emp_id=222;

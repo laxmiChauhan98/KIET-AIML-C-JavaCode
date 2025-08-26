@@ -12,8 +12,8 @@ class EmployeePoly{
         System.out.println("Salary of the Employee is: " +salary);
     }    
 
-    void Emp_details(int salary, int raise){
-        System.out.println("Salary after appraisal is: " +(salary+raise));
+    void Emp_details(String company){
+        System.out.println("Institute name is: " +company);
 
     }
 }
@@ -21,6 +21,7 @@ class Faculties extends EmployeePoly{
 
     void Emp_details(){
         super.Emp_details();
+        super.Emp_details("ABES");
         System.out.println("Welcome "+Emp_name);
     }
 
@@ -33,7 +34,7 @@ public class PolyMorphism {
 
         emp.Emp_details(300000);
 
-        emp.Emp_details(300000, 20000);
+        emp.Emp_details("KIET");
 
         Faculties f=new Faculties();
         f.Emp_name="Shikha Chauhan";

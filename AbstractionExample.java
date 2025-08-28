@@ -1,6 +1,6 @@
 // Abstract class
-abstract class Employee {
-    String name;
+abstract class Employeee {
+    String name="Shikha";
 
     // Abstract method (no body --→ must be implemented in child)
     abstract void calculateSalary();
@@ -12,7 +12,7 @@ abstract class Employee {
 }
 
 // Child class
-class FullTimeEmployee extends Employee {
+class FullTimeEmployee extends Employeee {
     int workingDays;
     int perDaySalary;
 
@@ -23,18 +23,32 @@ class FullTimeEmployee extends Employee {
     }
 }
 
+// Another Child class
+class PartTimeEmployee extends Employeee {
+    int hourlyRate, hours;
+
+    PartTimeEmployee(String name, int hourlyRate, int hours) {
+        super();
+        this.hourlyRate = hourlyRate;
+        this.hours = hours;
+    }
+
+    // Implement abstract method
+    @Override
+    void calculateSalary() {
+        System.out.println("Part-time Salary: " + (hourlyRate * hours));
+    }
+}
 
 public class AbstractionExample {
     public static void main(String[] args) {
+        Employeee e1 = new FullTimeEmployee();
+        Employeee e2 = new PartTimeEmployee("Suman", 200, 50);
 
-
-        FullTimeEmployee e1 = new FullTimeEmployee();
-        e1.name="Shikha";
-        e1.workingDays=25;
-        e1.perDaySalary=2500;
         e1.empDetails();
         e1.calculateSalary();
 
-        
+        e2.empDetails();
+        e2.calculateSalary();
     }
 }

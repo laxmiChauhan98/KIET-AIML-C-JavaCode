@@ -49,6 +49,7 @@ public class InheritanceMultiLevel {
     rf1.Emp_id=999;
     rf1.Emp_name="Akhilesh";
     rf1.Department="Pharma";
+    rf1.subject="BioTechnology";
     rf1.Designation="Associate Professor";
     rf1.researchArea="\"Pharma Industry in Pollution\"";
     rf1.paperPublished=10;

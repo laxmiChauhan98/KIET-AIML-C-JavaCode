@@ -16,7 +16,7 @@ interface Collegee {
     static void conMethod(){
         System.out.println("Static concrete inside interface");
     }
-
+    
 }
 
 class Kiett implements Collegee{

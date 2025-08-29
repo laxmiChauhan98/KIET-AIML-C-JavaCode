@@ -1,4 +1,4 @@
-class Employee{
+class Employeee{
     int Emp_id;
     String Emp_name;
     static String Organisation="KIET";
@@ -8,7 +8,7 @@ class Employee{
     }
 }
 
-class Faculty extends Employee{
+class Faculty extends Employeee{
     String Department;
     String subject;
     String Designation;

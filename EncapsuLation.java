@@ -17,7 +17,7 @@ class EmployeeEncap{
     public int getSalary(String pswd){
         if(pswd.equals(password)){
             System.out.println("Amount is: "+salary);
-             return salary;
+            //  return salary;
         }
         else{
             System.out.println("Wrong Password: Access Denied");

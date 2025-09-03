@@ -1,5 +1,5 @@
-package SecondPackage;
-import FirstPackage.*;
+package ABES;
+import KIET.*;
 
 public class AccessModifierTesting2 extends Emp_AccessModifier {
     public static void main(String[] args) {   

@@ -8,7 +8,7 @@ class Employeee{
     }
 }
 
-class Faculty extends Employeee{
+class Facultyy extends Employeee{
     String Department;
     String subject;
     String Designation;
@@ -17,7 +17,7 @@ class Faculty extends Employeee{
     }  
     
 }
-class ResearchFaculty extends Faculty{
+class ResearchFaculty extends Facultyy{
     String researchArea;
     int paperPublished;
 
@@ -32,7 +32,7 @@ public class InheritanceMultiLevel {
 
     public static void main(String[] args) {
 
-    Faculty f = new Faculty();
+    Facultyy f = new Facultyy();
     f.Emp_id=101;
     f.Emp_name="Deepak Kumar";
     f.Department="AIML";

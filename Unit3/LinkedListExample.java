@@ -1,11 +1,14 @@
-package Unit2;
-import java.util.*;
+package Unit3;
+import java.util.Iterator;
+import java.util.LinkedList;
 
 public class LinkedListExample{
     public static void main(String[] args) {
 
         // Create LinkedList of Employees
         LinkedList<String> employees = new LinkedList<>();
+
+       
 
         // -------------------- ADD Methods --------------------
         employees.add("John");                          // add at end
@@ -41,6 +44,7 @@ public class LinkedListExample{
 
 
         // -------------------- SEARCH Methods --------------------
+        employees.add("John");
         employees.add("Meena");
         employees.add("John");
         System.out.println("Contains 'John'? " + employees.contains("John"));
@@ -68,11 +72,11 @@ public class LinkedListExample{
 
         //Traversing the list of elements in reverse order 
         
-        // System.out.println("\nReverse Order:");
-        // Iterator i =employees.descendingIterator();
-        // while(i.hasNext()){
-        //     System.out.println(i.next());
-        // }
+        System.out.println("\nReverse Order:");
+        Iterator i =employees.descendingIterator();
+        while(i.hasNext()){
+            System.out.println(i.next());
+        }
 
 
         // -------------------- CLEAR --------------------

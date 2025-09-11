@@ -1,10 +1,17 @@
-package Unit2;
-import java.util.*;
+package Unit3;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
 
 public class ArrayListExample {
     public static void main(String[] args) {
         
+        ArrayList al=new ArrayList();
 
+        al.add("Shikha");
+        al.add(123);
+
+        System.out.println(al);
         // Create ArrayList
         ArrayList<String> employees = new ArrayList<>();
 
@@ -13,9 +20,32 @@ public class ArrayListExample {
         employees.add("Alice");
         employees.add("Bob");
         employees.add("Eve");
+       
+
+    
+        // To print the list 
         System.out.println("Employees: " + employees);
 
-        // 2. add(index, element) - Adding at particular index 
+         // Iterating using for-each loop
+        System.out.println("\n employees by Loop:");
+        for (String emp : employees) {
+            System.out.println(emp);
+        }
+
+        // Iterating using Iterator
+           System.out.println("\nIterating with Iterator:");
+        Iterator<String> it = employees.iterator();
+        while(it.hasNext()){
+            System.out.println(it.next());
+        }
+       
+             System.out.println(employees);
+
+
+        Collections.sort(employees);
+        System.out.println("After Sorting Employees: " + employees);
+
+        //2. add(index, element) - Adding at particular index 
         employees.add(2, "Charlie");
         System.out.println("After adding Charlie at index 2: " + employees);
 
@@ -43,14 +73,11 @@ public class ArrayListExample {
         // 9. isEmpty() - check whether list is empty or not
         System.out.println("Is ArrayList empty? " + employees.isEmpty());
 
-        // 10. Iterating using for-each loop
-        System.out.println("\nIterating employees:");
-        for (String emp : employees) {
-            System.out.println(emp);
-        }
+       
 
         // 11. clear() - saare elements delete
         employees.clear();
         System.out.println("After clear(): " + employees);
     }
 }
+

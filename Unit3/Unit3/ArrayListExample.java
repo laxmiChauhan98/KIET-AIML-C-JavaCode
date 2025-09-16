@@ -21,6 +21,9 @@ public class ArrayListExample {
         employees.add("Bob");
         employees.add("Eve");
        
+        
+        employees.addAll(al);
+        System.out.println("After addAll: "+employees);
 
     
         // To print the list 

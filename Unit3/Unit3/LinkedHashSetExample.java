@@ -1,6 +1,8 @@
 package Unit3;
 
+import java.util.HashSet;
 import java.util.LinkedHashSet;
+import java.util.TreeSet;
 
 
 public class LinkedHashSetExample {
@@ -12,12 +14,29 @@ public class LinkedHashSetExample {
 
         System.out.println("LinkedHashSet is: "+numbers);
 
+
+        HashSet<Integer> hs=new HashSet<>();
+         hs.add(21);
+         hs.add(12);
+         hs.add(111);
+         System.out.println("HashSet is: "+hs);
+
         LinkedHashSet<Integer> number1=new LinkedHashSet<>();
          number1.add(21);
          number1.add(12);
          number1.add(111);
         
-         System.out.println("HashSet 2: "+number1);
+         System.out.println("LinkedHashSet is: "+number1);   
+
+         TreeSet<Integer> ts=new TreeSet<>();
+         ts.add(21);
+         ts.add(12);
+         ts.add(111);
+         System.out.println("TreeSet is: "+ts);
+
+
+
+
 
          //union- addALL , intersection- retainAll , difference- removeAll
 

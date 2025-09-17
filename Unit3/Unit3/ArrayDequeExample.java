@@ -1,7 +1,6 @@
 package Unit3;
+
 import java.util.ArrayDeque;
-
-
 
 public class ArrayDequeExample {
 
@@ -46,11 +45,20 @@ public class ArrayDequeExample {
 
         // Clear the deque
         deque.clear();
+       
         System.out.println("Deque after clear:");
         System.out.println(deque);
 
         System.out.println("Is the deque empty now? " + deque.isEmpty());
     }
 }
+
+
+
+
+
+
+
+
 
 

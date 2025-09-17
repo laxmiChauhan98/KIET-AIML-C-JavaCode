@@ -20,11 +20,7 @@ public class TreeSetExample {
         ts.add("Banana");
         ts.add("Grapes");
        
-        System.out.println(ts);
-
-       
-        System.out.println(ts.hashCode());
-        
+        System.out.println(ts);        
     }
     
 }

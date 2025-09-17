@@ -26,11 +26,11 @@ public class HashSetExample {
          System.out.println("After union Set2: "+number1);
 
          number1.removeAll(numbers);
-         System.out.println(number1);
+         System.out.println("After Difference: "+number1);
 
          number1.retainAll(numbers);
 
-         System.out.println(number1);
+         System.out.println("After Intersection: "+number1);
 
          HashSet<String> hs=new HashSet<>();
          hs.add("Apple");

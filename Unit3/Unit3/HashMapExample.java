@@ -3,9 +3,8 @@ package Unit3;
 
 import java.util.HashMap;
 import java.util.Iterator;
-import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.TreeMap;
+
 
 public class HashMapExample {
     public static void main(String[] args) {

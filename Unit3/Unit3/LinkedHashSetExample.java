@@ -16,8 +16,9 @@ public class LinkedHashSetExample {
 
 
         HashSet<Integer> hs=new HashSet<>();
-         hs.add(21);
-         hs.add(12);
+        hs.add(12); 
+        hs.add(21);
+         
          hs.add(111);
          System.out.println("HashSet is: "+hs);
 

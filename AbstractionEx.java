@@ -42,6 +42,8 @@ public class AbstractionEx {
     c.medicalFacilities();
     
 
+    System.out.println("Current Thread: " + Thread.currentThread().getName());
+    
     }
 
 }

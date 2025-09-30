@@ -1,29 +1,32 @@
 package Unit2;
 
 
-class Thread1 extends Thread{
+class ThreadDemo extends Thread{
     public void run(){
-        for(int i=0;i<30;i++){
-            System.out.println(Thread.currentThread().getName());
+        for(int i=0;i<20;i++){
+            System.out.println("First thread is running");
+             
     }
 }
 }
 
-class Thread2 extends Thread {
-    public void run(){
-         for(int i=0;i<30;i++){
-        
-        System.out.println(Thread.currentThread().getName());
-         }
-    } 
-}
 public class CreatingThread1 {
     public static void main(String[] args) {
-        Thread1 t1=new Thread1();
-        Thread2 t2=new Thread2();
-
-        t1.start();
-        t2.start();
+        ThreadDemo t1=new ThreadDemo();
+        t1.start();     
     }
     
 }
+
+
+
+
+
+
+
+
+// try{
+//         Thread.sleep(1000);
+//         }catch(InterruptedException ie){
+//             System.out.println(ie);
+//         }

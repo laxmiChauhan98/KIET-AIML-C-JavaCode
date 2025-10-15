@@ -8,7 +8,7 @@ class Emplloyee{
     }
 }
 
-class Faculty extends Emplloyee{
+class Facultyyy extends Emplloyee{
     String Department;
     String subject;
     String Designation;
@@ -23,7 +23,7 @@ public class InheritanceSingle{
         
     
     
-    Faculty f=new Faculty();
+    Facultyyy f=new Facultyyy();
     f.Emp_id=101;
     f.Emp_name="Deepak Kumar";
     f.Department="AIML";

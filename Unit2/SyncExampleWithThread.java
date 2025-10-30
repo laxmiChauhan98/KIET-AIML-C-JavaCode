@@ -1,4 +1,4 @@
-package Unit2;
+
 
 class BankAccount extends Thread {
     static int balance = 5000;

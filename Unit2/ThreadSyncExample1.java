@@ -1,4 +1,4 @@
-package Unit2;
+
 
 class Counter1 extends Thread {
     int count = 0;

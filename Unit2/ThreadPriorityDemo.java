@@ -1,4 +1,4 @@
-package Unit2;
+
 
 class PriorityExample extends Thread {
     public void run() {

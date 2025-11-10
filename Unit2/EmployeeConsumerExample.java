@@ -7,11 +7,11 @@ import java.util.function.Consumer;
 //     void accept(T t);
 // }
 
-class Employee {
+class Employeee {
     String name;
     double salary;
 
-    Employee(String name, double salary) {
+    Employeee(String name, double salary) {
         this.name = name;
         this.salary = salary;
     }
@@ -20,16 +20,16 @@ class Employee {
 public class EmployeeConsumerExample {
     public static void main(String[] args) {
         // Creating an ArrayList of Employees
-        ArrayList<Employee> employees = new ArrayList<>();
+        ArrayList<Employeee> employees = new ArrayList<>();
 
-        employees.add(new Employee("Laxmi", 50000));
-        employees.add(new Employee("Neha", 60000));
+        employees.add(new Employeee("Laxmi", 50000));
+        employees.add(new Employeee("Neha", 60000));
 
         // Consumer to give bonus
-        Consumer<Employee> giveBonus = (e) -> e.salary += 5000;
+        Consumer<Employeee> giveBonus = (e) -> e.salary += 5000;
 
         // Consumer to display employee details
-        Consumer<Employee> show = (e) ->
+        Consumer<Employeee> show = (e) ->
             System.out.println(e.name + " => " + e.salary);
 
         employees.forEach(giveBonus);

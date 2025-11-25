@@ -1,0 +1,15 @@
+{
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-21",
+            "path": "C:/Java/jdk-21"
+        }
+    ],
+    "java.configuration.compilerArgs": ["--release", "21"],
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar"
+    ],
+    "java.compile.nullAnalysis.mode": "disabled"
+}

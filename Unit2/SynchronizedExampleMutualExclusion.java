@@ -9,7 +9,7 @@ class BankAccount1 {
     //    System.out.println("Hello Customer");
     //    System.out.println("Pin verification");
 
-       
+   
         if (balance >= amount) {
             System.out.println(Thread.currentThread().getName() + " is withdrawing " + amount);
             balance -= amount;
@@ -38,7 +38,7 @@ class WithdrawThreads extends Thread {
     }
 }
 
-public class SynchronizedExample {
+public class SynchronizedExampleMutualExclusion {
     public static void main(String[] args) {
         BankAccount1 b1 = new BankAccount1();
 

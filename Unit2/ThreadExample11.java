@@ -35,12 +35,6 @@ public class ThreadExample11 {
     
 }
 
-
-
-
-
-
-
 //    try {
 //             if (Thread.currentThread().getName().equals("Thread-0")) { 
 //                 // sirf t thread (Thread-0) ke liye

@@ -20,7 +20,7 @@ public class SpringConfig4 {
         Student4 stObj1=new Student4();
         stObj1.setName("Vidhi");
         stObj1.setRollno(10);
-        stObj1.setAddress(AddId1());
+        stObj1.setAddress(AddId1());    //dependency injection by setter method
         return stObj1;
     }
     

@@ -12,7 +12,7 @@ public class Main3 {
     public static void main(String[] args) {
 
       
-     @SuppressWarnings("resource")
+   
      ApplicationContext context=new AnnotationConfigApplicationContext(SpringConfig3.class);
    
             Student3 st1 = (Student3) context.getBean(Student3.class);

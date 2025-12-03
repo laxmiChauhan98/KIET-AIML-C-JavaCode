@@ -9,7 +9,7 @@ public class Student8 {
     private int rollno;
  
     @Autowired
-    @Qualifier("AddId2")   //to remove confusion if we have 2 beans objects of same class
+    @Qualifier("AddId1")   //to remove confusion if we have 2 beans objects of same class
     private Address8 address;
     public String getName() {
         return name;

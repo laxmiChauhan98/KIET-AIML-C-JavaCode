@@ -7,7 +7,6 @@ public class Main2 {
     public static void main(String[] args) {
 
       
-     @SuppressWarnings("resource")
      ApplicationContext context=new AnnotationConfigApplicationContext(SpringConfig2.class);
      //1. Calling object via method name 
        //  Student2 st1 = (Student2) context.getBean("stdId1");

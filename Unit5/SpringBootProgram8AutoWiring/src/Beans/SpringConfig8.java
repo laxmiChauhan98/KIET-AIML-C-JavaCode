@@ -28,7 +28,7 @@ public class SpringConfig8 {
         Student8 stObj1=new Student8();
         stObj1.setName("Vidhi");
         stObj1.setRollno(10);
-      //  stObj1.setAddress(AddId1());  //mannually Dependency Injection
+      //  stObj1.setAddress(AddId1());  //manually Dependency Injection
         return stObj1;
     }
     

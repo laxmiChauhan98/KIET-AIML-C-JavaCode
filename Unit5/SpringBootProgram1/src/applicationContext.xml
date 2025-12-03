@@ -10,7 +10,7 @@
        <property name="name" value="Laxmi" />
         <property name="rollno" value="111" />
         <property name="email" value="Laxmi123@gmail.com" />
-    </bean>
+    </bean>   
      <bean class="Student1" id="stdInfo2">
        <property name="name" value="Anisha" />
         <property name="rollno" value="112" />

@@ -17,7 +17,7 @@ public class SpringConfig5 {
     }
     @Bean
     public Student5 stdId5(){
-        Student5 stObj1=new Student5(101,"Shivani",AddId1());
+        Student5 stObj1=new Student5(101,"Shivani", AddId1());
         // stObj1.setName("Vidhi");
         // stObj1.setRollno(10);
         // stObj1.setAddress(AddId1());

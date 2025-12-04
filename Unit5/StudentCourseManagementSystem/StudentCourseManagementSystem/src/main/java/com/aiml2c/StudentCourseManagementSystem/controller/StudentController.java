@@ -6,20 +6,20 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController
-@RequestMapping("/api/students")
-@CrossOrigin("*")
+@RestController   //this class will handle REST API requests
+@RequestMapping("/api/students")  //Sets a common base URL for all endpoints
+@CrossOrigin("*")   //Allow ALL origins(React, Angular, Vue, Postman, Browser)
 public class StudentController {
 
     private final StudentService service;
 
-    public StudentController(StudentService service) {
+    public StudentController(StudentService service) {  //constructor dependency
         this.service = service;
     }
 
     // Create
     @PostMapping
-    public Student add(@RequestBody Student s) {
+    public Student add(@RequestBody Student s) { //JSON data from frontend is converted into a Student object.
         return service.addStudent(s);
     }
 
@@ -31,7 +31,7 @@ public class StudentController {
 
     // Read one
     @GetMapping("/{id}")
-    public Student getOne(@PathVariable Long id) {
+    public Student getOne(@PathVariable Long id) { //@pathvariable It convert URL's “/5” ko id=5.
         return service.getById(id);
     }
 

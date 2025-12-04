@@ -11,11 +11,13 @@ public class StudentService {
 
     private final StudentRepository repo;
 
-    public StudentService(StudentRepository repo) {
+    public StudentService(StudentRepository repo) {  //Constructor injection
         this.repo = repo;
     }
 
-    public Student addStudent(Student s) {
+    public Student addStudent(Student s) {  
+        /* addStudent method accepts a Student object.
+           repo.save(s) inserts the student into the database. */
         return repo.save(s);
     }
 

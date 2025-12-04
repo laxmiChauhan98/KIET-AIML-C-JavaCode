@@ -6,11 +6,11 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 
-@Entity
+@Entity  //class = table, variables = columns (This class will map with table in DB)
 public class Student {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id   //to define primary key
+    @GeneratedValue(strategy = GenerationType.IDENTITY)  //DB will generate auto increment ID numbers
     private Long id;
 
     private String name;
